@@ -1,0 +1,89 @@
+:root {
+  --primary-color: white;
+  --default-font-family: "poppins", sans-serif;
+  --secondary-color: rgb(22, 0, 0);
+  --button-color: #462cb2;
+}
+
+body {
+  font-family: var(--default-font-family);
+  background: var(--secondary-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--default-font-family);
+   color: var(--primary-color);
+}
+
+.container{
+max-width: 1400px;
+margin: 0 auto;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/cover\ photo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 150px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+ 
+}
+
+.hero h1{
+    font: weight 500;
+  font-size: 80px;
+  line-height:1;
+  margin: 30px 0;
+}
+.hero h2{
+    font-weight: 400;
+  font-size: 35px;
+  line-height: 1.5;
+margin: 0
+}
+.hero h3{
+    font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  margin: 0
+}
+
+.hero a{
+font-weight: 500;
+font-size: 14px;
+text-align: center;
+line-height: 1.5;
+margin-top: 30px;
+display: inline-block;
+color: var(--secondary-color);
+letter-spacing: 3px;
+text-decoration: none;
+text-transform: uppercase;
+background: white;
+padding: 15px 30px;
+}
+
+  @media (max-width:950px){
+    .hero{
+        padding: 60px, 0;
+    }
+    .hero h1{
+        font-size: 40px ;
+    }
+    .hero h2{
+        font-size: 20px ;
+    }
+     .hero h3{
+        font-size: 12px ;
+    }
+  }
