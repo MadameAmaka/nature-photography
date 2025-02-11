@@ -25,7 +25,7 @@ max-width: 1400px;
 margin: 0 auto;
 }
 
-.hero {
+header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(/images/header\ photo.jpg);
   background-size: cover;
@@ -38,19 +38,20 @@ margin: 0 auto;
  
 }
 
-.hero h1{
+header h1{
     font: weight 500;
   font-size: 80px;
   line-height:1;
   margin: 30px 0;
 }
-.hero h2{
+header h2{
     font-weight: 400;
   font-size: 35px;
   line-height: 1.5;
 margin: 0
 }
-.hero h3{
+
+header h3{
     font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -58,7 +59,7 @@ margin: 0
   margin: 0
 }
 
-.hero a{
+header a{
 font-weight: 500;
 font-size: 14px;
 text-align: center;
@@ -73,6 +74,59 @@ background: white;
 padding: 15px 30px;
 }
 
+.grid{
+  display: grid;
+  grid-gap: 64px;
+}
+.grid-main{
+    grid-template-columns: 1fr 1fr;
+}
+
+.img-responsive{
+  max-width: 100%;
+}
+
+section{
+  max-width:  1200px; ;
+  margin: 0 auto;
+  padding: 100px 0;
+ }
+
+
+main{
+  background: rgb(214, 193, 193);
+}
+
+
+main h2{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  color:var(--secondary-color);
+  margin: 0;
+  opacity: 0.4;
+  text-transform: uppercase ;
+}
+
+main h3{
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 50px;
+    color:var(--secondary-color);
+    margin: 0;
+}
+
+main p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+    color:var(--secondary-color);
+    opacity: 0.7;
+}
+
+
+
 footer{
     color:white;
      background-image: linear-gradient(rgba(17, 0, 0, 0.7), rgba(17, 0, 0, 0.7)),
@@ -80,15 +134,11 @@ footer{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 80px 0px;
-  max-width:  1200px; ;
-  margin: 0 auto
-}
+    }
 
-
-.photo-grid{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr;}
+.grid-footer{
+       grid-template-columns: 1fr 2fr 2fr;
+  }
 
 footer h3{
 font-weight: 500;
@@ -117,7 +167,7 @@ footer a{
     opacity: 0.7;
 }
 
-  @media (max-width:950px){
+  @media (max-width:970px){
     .hero{
         padding: 60px, 0;
     }
@@ -129,5 +179,12 @@ footer a{
     }
      .hero h3{
         font-size: 12px ;
+    }
+    .grid{
+      grid-template-columns: 1fr;
+      grid-gap: 30px;
+    }
+    section{
+      padding: 25px;
     }
   }
