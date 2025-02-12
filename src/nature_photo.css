@@ -84,19 +84,61 @@ padding: 15px 30px;
 
 .img-responsive{
   max-width: 100%;
+  display: block;
 }
 
+.text-center{
+  text-align: center;
+}
+
+.grid-styles{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.photo-styles{
+  background: grey;
+  margin: 30px 0;
+}
+
+.video-embed {
+  width: 100%;
+  aspect-ratio: 21/9;
+  margin: 10px;
+}
+
+.photostyles-body{
+  padding: 30px;
+}
+
+.photostyles-footer{
+padding: 0 30px 30px;
+}
+
+.btn{
+  display: block;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: #462cb2;
+  text-decoration: none;
+}
 section{
-  max-width:  1200px; ;
+  max-width:  100%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 100px;
  }
 
+ section.photo-styles{
+  background:rgb(153, 138, 138) ;
+ }
 
 main{
   background: rgb(214, 193, 193);
 }
-
 
 main h2{
   font-weight: 600;
@@ -116,6 +158,22 @@ main h3{
     margin: 0;
 }
 
+main h4{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+main h5{
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
 main p{
   font-style: normal;
   font-weight: 500;
@@ -124,8 +182,6 @@ main p{
     color:var(--secondary-color);
     opacity: 0.7;
 }
-
-
 
 footer{
     color:white;
@@ -168,16 +224,16 @@ footer a{
 }
 
   @media (max-width:970px){
-    .hero{
+    header{
         padding: 60px, 0;
     }
-    .hero h1{
+    header h1{
         font-size: 40px ;
     }
-    .hero h2{
+    header h2{
         font-size: 20px ;
     }
-     .hero h3{
+    header h3{
         font-size: 12px ;
     }
     .grid{
@@ -187,4 +243,8 @@ footer a{
     section{
       padding: 25px;
     }
+    .video-embed {
+    width: 50%;
+    aspect-ratio: 16/9;
+  }
   }
