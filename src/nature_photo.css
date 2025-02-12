@@ -78,7 +78,7 @@ padding: 15px 30px;
   display: grid;
   grid-gap: 64px;
 }
-.grid-main{
+.grid-main1{
     grid-template-columns: 1fr 1fr;
 }
 
@@ -91,19 +91,19 @@ padding: 15px 30px;
   text-align: center;
 }
 
-.grid-styles{
-  grid-template-columns: 1fr 1fr 1fr;
-}
+.grid-main2{
+       grid-template-columns: 1fr 1fr 1fr;
+  }
 
 .photo-styles{
-  background: grey;
+  background:rgb(105, 74, 74) ;
   margin: 30px 0;
 }
 
 .video-embed {
-  width: 100%;
-  aspect-ratio: 21/9;
-  margin: 10px;
+  width:95%;
+  aspect-ratio: 16/9;
+  margin: 4px 10px 0;
 }
 
 .photostyles-body{
@@ -116,14 +116,14 @@ padding: 0 30px 30px;
 
 .btn{
   display: block;
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 14px;
-  line-height: 21px;
+  padding:10px;
   text-align: center;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: #462cb2;
+  background-color: white;
   text-decoration: none;
 }
 section{
@@ -132,19 +132,19 @@ section{
   padding: 100px;
  }
 
- section.photo-styles{
-  background:rgb(153, 138, 138) ;
+ section.nature-styles{
+  background:rgb(151, 109, 109) ;
  }
 
 main{
-  background: rgb(214, 193, 193);
+  background: rgb(190, 129, 129);
 }
 
 main h2{
   font-weight: 600;
   font-size: 15px;
   line-height: 1.5;
-  color:var(--secondary-color);
+  color:var(--primary-color);
   margin: 0;
   opacity: 0.4;
   text-transform: uppercase ;
@@ -154,7 +154,7 @@ main h3{
   font-weight: 600;
   font-size: 34px;
   line-height: 50px;
-    color:var(--secondary-color);
+    color:var(--primary-color);
     margin: 0;
 }
 
@@ -162,7 +162,7 @@ main h4{
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -170,7 +170,7 @@ main h5{
   font-weight: 500;
   font-size: 13px;
   line-height: 1;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   margin: 0;
 }
 
@@ -179,7 +179,7 @@ main p{
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-    color:var(--secondary-color);
+    color:var(--primary-color);
     opacity: 0.7;
 }
 
