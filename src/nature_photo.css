@@ -96,7 +96,7 @@ padding: 15px 30px;
   }
 
 .photo-styles{
-  background:rgb(105, 74, 74) ;
+  background:#3f2f20 ;
   margin: 30px 0;
 }
 
@@ -123,7 +123,7 @@ padding: 0 30px 30px;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: #f1e1d1;
   text-decoration: none;
 }
 section{
@@ -133,11 +133,11 @@ section{
  }
 
  section.nature-styles{
-  background:rgb(151, 109, 109) ;
+  background:#72573f ;
  }
 
 main{
-  background: rgb(190, 129, 129);
+  background: #99795F;
 }
 
 main h2{
@@ -168,7 +168,7 @@ main h4{
 
 main h5{
   font-weight: 500;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1;
   color: var(--primary-color);
   margin: 0;
